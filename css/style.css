@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+  background-color: #ccc !important;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row .wrap {
+  padding: 0 200px;
+  margin-bottom: 50px;
+}
+
+.row h1 {
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  padding: 5px;
+}
+
+.slide-item {
+  width: 100%;
+}
+
+.slide-item img {
+  height: 120px;
+}
+
+.slider-nav-3 {
+  padding: 0 50px;
+}
+
+.slider-nav-3 .slick-dots {
+  position: static;
+  padding: 0 50px;
+}
+
+.slider-for-4 a img {
+  margin: auto;
+}
+
+.slider-nav-4 {
+  padding: 0 50px;
+}
+
+.slider-nav-4 .slick-dots {
+  position: static;
+  padding: 0 50px;
+}
+/*# sourceMappingURL=style.css.map */

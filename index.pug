@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title index
+        //- style
+        link(rel="stylesheet", href="./css/style.css")
+        //- bt4
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        //- slick
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css")
+
+    body
+        .container
+            .row
+                h1 CenterMode，不顯示左右
+                .wrap.col-12
+                    .slider.slider-for-1
+                        img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=2", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=3", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=4", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=5", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=6", alt="")
+                    .slider.slider-nav-1
+                        img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=2", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=3", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=4", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=5", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=6", alt="")
+
+                h1 底下的nav不會動
+                .wrap.col-12
+                    .slider.slider-for-2
+                        img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=2", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=3", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=4", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=5", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=6", alt="")
+                    .slider.slider-nav-2
+                        img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=2", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=3", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=4", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=5", alt="")
+                        img(src="https://fakeimg.pl/650x400/555/?text=6", alt="")
+
+                h1 同高不同寬
+                .wrap.col-12
+                    .slider.slider-for-3
+                        img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        img(src="https://fakeimg.pl/400x400/555/?text=2", alt="")
+                        img(src="https://fakeimg.pl/300x700/555/?text=3", alt="")
+                        img(src="https://fakeimg.pl/650x550/555/?text=4", alt="")
+                    .slider.slider-nav-3
+                        .slide-item
+                            img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/400x400/555/?text=2", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/300x700/555/?text=3", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/650x550/555/?text=4", alt="")
+
+                h1 同高不同寬+彈跳視窗(影片＋圖片)
+                .wrap.col-12
+                    .slider.slider-for-4
+                        a(data-fslightbox href="https://fakeimg.pl/650x400/555/?text=1")
+                            img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        a(data-fslightbox href="https://www.youtube.com/embed/K4DyBUG242c")
+                            img(src="https://fakeimg.pl/400x400/555/?text=2-video", alt="")
+                        a(data-fslightbox href="https://fakeimg.pl/300x700/555/?text=3")
+                            img(src="https://fakeimg.pl/300x700/555/?text=3", alt="")
+                        a(data-fslightbox href="https://fakeimg.pl/650x550/555/?text=4")
+                            img(src="https://fakeimg.pl/650x550/555/?text=4", alt="")
+                    .slider.slider-nav-4
+                        .slide-item
+                            img(src="https://fakeimg.pl/650x400/555/?text=1", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/400x400/555/?text=2-video", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/300x700/555/?text=3", alt="")
+                        .slide-item
+                            img(src="https://fakeimg.pl/650x550/555/?text=4", alt="")
+                        
+
+
+
+        //- jq
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        //- bt4
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+        //- slick
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js")
+        //- fslightbox
+        script(src="./js/fslightbox.js")
+        //- java
+        script(src="./js/java.js")
