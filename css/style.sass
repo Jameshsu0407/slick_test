@@ -46,13 +46,14 @@ body
         img
             height: 80px
 
-// CenterMode，不顯示左右
-.slider-nav-1
-    
 // 同高不同寬
 .slider-nav-3
+    // 若要更改導覽列寬度，需要控制padding
     padding: 0 50px
     .slick-dots
+        // 但是點點是預設是position: relative，所以要改，不然會突出去
+        // 但是改成position: static的話，兩側的箭頭會認為導覽列跟點點是一體的
+        // 箭頭就會以兩者置中
         position: static
         padding: 0 50px    
     
@@ -69,9 +70,7 @@ body
             margin: auto
 .slider-nav-4
     padding: 0 50px
-    .slick-dots
-        position: static
-        padding: 0 50px 
+    // 這個就沒有點點，所以箭頭就會以導覽列置中
 
 @media screen and ( max-width: 576px )
     .slider-nav-4

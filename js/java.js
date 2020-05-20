@@ -13,6 +13,7 @@ $('.slider-nav-1').slick({
     arrows: true,
     dots: true,
     focusOnSelect: true,
+    // centerMode會讓整的導覽列變小
     centerMode: true,
     responsive: [
         {
@@ -20,6 +21,7 @@ $('.slider-nav-1').slick({
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
+            // 為了讓手機版圖是大的
             centerMode: false,
           }
         }
@@ -81,6 +83,7 @@ $('.slider-nav-2')
             {
               breakpoint: 576,
               settings: {
+                // 為了在手機版顯示大圖，改成顯示兩張
                 slidesToShow: 2,
                 slidesToScroll: 2,
               }
@@ -153,7 +156,7 @@ $('.slider-nav-4').slick({
 	slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for-4',
-    dots: true,
+    dots: false,
     focusOnSelect: true,
     centerMode: true,
     infinite: true,
