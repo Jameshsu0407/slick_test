@@ -8,6 +8,10 @@ body {
   background-color: #ccc !important;
 }
 
+a:focus {
+  outline: none;
+}
+
 .row {
   display: flex;
   justify-content: center;
