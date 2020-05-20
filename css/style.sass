@@ -16,7 +16,23 @@ body
         margin-bottom: 50px
     h1
         margin-bottom: 30px
+@media screen and ( max-width: 768px )
+    .row
+        .wrap
+            padding: 0 30px
+            margin-bottom: 20px
+        h1
+            margin-bottom: 15px
 
+@media screen and ( max-width: 576px )
+    .row
+        .wrap
+            padding: 0
+            margin-bottom: 20px
+        h1
+            font-size: 30px
+            margin-bottom: 10px
+    
 // slick調整共同樣式
 .slick-slide
     padding: 5px
@@ -25,21 +41,40 @@ body
     width: 100%
     img
         height: 120px
+@media screen and ( max-width: 576px )
+    .slide-item
+        img
+            height: 80px
 
+// CenterMode，不顯示左右
+.slider-nav-1
+    
 // 同高不同寬
 .slider-nav-3
     padding: 0 50px
     .slick-dots
         position: static
-        padding: 0 50px        
+        padding: 0 50px    
+    
+@media screen and ( max-width: 576px )
+    .slider-nav-3
+        padding: 0  20px
+
 
 // 同高不同寬+彈跳視窗（影片＋圖片）
 .slider-for-4
     a
         img
+            width: 100%
             margin: auto
 .slider-nav-4
     padding: 0 50px
     .slick-dots
         position: static
         padding: 0 50px 
+
+@media screen and ( max-width: 576px )
+    .slider-nav-4
+        padding: 0
+        .slick-dots
+            position: absolute

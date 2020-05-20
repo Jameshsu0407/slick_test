@@ -7,12 +7,23 @@ $('.slider-for-1').slick({
     asNavFor: '.slider-nav-1'
 });
 $('.slider-nav-1').slick({
-	slidesToShow: 3,
+	slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.slider-for-1',
+    arrows: true,
     dots: true,
     focusOnSelect: true,
     centerMode: true,
+    responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        }
+    ]
 });
 
 function setSlideVisibility() {
@@ -50,9 +61,7 @@ $('.slider-for-2').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    // adaptiveHeight: true,
     infinite: true,
-    // useTransform: true,
     speed: 400,
 });
 
@@ -67,8 +76,16 @@ $('.slider-nav-2')
         focusOnSelect: false,
         infinite: true,
         arrows: true,
-        dots: true
-
+        dots: true,
+        responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            }
+        ]
     });
 
 $('.slider-for-2').on('afterChange', function(event, slick, currentSlide) {
@@ -107,7 +124,15 @@ $('.slider-nav-3').slick({
     centerMode: true,
     infinite: true,
     variableWidth: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            dots: false
+          }
+        }
+    ]
 });
 
 // 同高不同寬+彈跳視窗（影片＋圖片）
@@ -120,7 +145,8 @@ $('.slider-for-4').slick({
     infinite: true,
     centerMode: true,
     // 必要，上圖跟下圖才不會爆開
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    
     
 });
 $('.slider-nav-4').slick({
@@ -132,5 +158,14 @@ $('.slider-nav-4').slick({
     centerMode: true,
     infinite: true,
     variableWidth: true,
-    arrows: true
+    arrows: true,
+    // responsive: [
+    //     {
+    //       breakpoint: 576,
+    //       settings: {
+    //         dots: false
+    //       }
+    //     }
+    // ]
+
 });
