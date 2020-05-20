@@ -81,12 +81,23 @@ body {
 }
 
 .slider-for-4 a img {
-  width: 100%;
+  height: auto;
   margin: auto;
 }
 
 .slider-nav-4 {
   padding: 0 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider-for-4 {
+    padding: 0;
+  }
+  .slider-for-4 a img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {

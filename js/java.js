@@ -1,4 +1,4 @@
-// centerMode，不顯示左右
+// A.CenterMode，不顯示左右 開始-----------------------------------------------------------------------
 $('.slider-for-1').slick({
 	slidesToShow: 1,
     slidesToScroll: 1,
@@ -55,9 +55,10 @@ $('.slider-nav-1').on('beforeChange', function() {
 $('.slider-nav-1').on('afterChange', function() {
   setSlideVisibility();
 });
+// A.CenterMode，不顯示左右 結束-----------------------------------------------------------------------
 
 
-// 底下的nav不會動
+// B.底下的nav不會動 開始-----------------------------------------------------------------------
 $('.slider-for-2').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -104,8 +105,10 @@ $('.slider-nav-2').on('click', '.slick-slide', function(event) {
 
     $('.slider-for-2').slick('slickGoTo', goToSingleSlide);
 });
+// B.底下的nav不會動 結束-----------------------------------------------------------------------
 
-// 同高不同寬
+
+// C.同高不同寬 開始-----------------------------------------------------------------------
 $('.slider-for-3').slick({
 	slidesToShow: 1,
     slidesToScroll: 1,
@@ -137,8 +140,10 @@ $('.slider-nav-3').slick({
         }
     ]
 });
+// C.同高不同寬 結束-----------------------------------------------------------------------
 
-// 同高不同寬+彈跳視窗（影片＋圖片）
+
+// D.同高不同寬+彈跳視窗（影片＋圖片）開始-----------------------------------------------------------------------
 $('.slider-for-4').slick({
 	slidesToShow: 1,
     slidesToScroll: 1,
@@ -162,13 +167,5 @@ $('.slider-nav-4').slick({
     infinite: true,
     variableWidth: true,
     arrows: true,
-    // responsive: [
-    //     {
-    //       breakpoint: 576,
-    //       settings: {
-    //         dots: false
-    //       }
-    //     }
-    // ]
-
 });
+// D.同高不同寬+彈跳視窗（影片＋圖片）結束-----------------------------------------------------------------------

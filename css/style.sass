@@ -34,8 +34,8 @@ body
         h1
             font-size: 30px
             margin-bottom: 10px
-    
-// slick調整共同樣式
+
+// 共同樣式 開始--------------------------------------------------------                
 .slick-slide
     padding: 5px
 
@@ -47,8 +47,10 @@ body
     .slide-item
         img
             height: 80px
+// 共同樣式 結束--------------------------------------------------------  
 
-// 同高不同寬
+
+// C.同高不同寬 開始--------------------------------------------------------
 .slider-nav-3
     // 若要更改導覽列寬度，需要控制padding
     padding: 0 50px
@@ -62,20 +64,29 @@ body
 @media screen and ( max-width: 576px )
     .slider-nav-3
         padding: 0  20px
+// C.同高不同寬 結束--------------------------------------------------------
 
 
-// 同高不同寬+彈跳視窗（影片＋圖片）
+// D.同高不同寬+彈跳視窗（影片＋圖片）開始--------------------------------------------------------
 .slider-for-4
     a
         img
-            width: 100%
+            height: auto
             margin: auto
 .slider-nav-4
     padding: 0 50px
     // 這個就沒有點點，所以箭頭就會以導覽列置中
-
+@media screen and ( max-width: 1200px )
+    .slider-for-4
+        padding: 0
+        a
+            img
+                width: 80%
+                height: 80%
+                margin: auto
 @media screen and ( max-width: 576px )
     .slider-nav-4
         padding: 0
         .slick-dots
             position: absolute
+// D.同高不同寬+彈跳視窗（影片＋圖片）結束--------------------------------------------------------
